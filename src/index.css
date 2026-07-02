@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Orbitron", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-purple: #6d28d9;
+  --color-brand-purple-light: #8b5cf6;
+  --color-brand-yellow: #eab308;
+  --color-brand-yellow-dark: #ca8a04;
+  --color-gaming-light: #faf5ff;
+  --color-gaming-card-light: #ffffff;
+  --color-gaming-card-hover-light: #f5f3ff;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-gaming-light);
+    color: #1e1b4b;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom glowing effects */
+.glow-purple {
+  box-shadow: 0 4px 20px rgba(109, 40, 217, 0.25);
+}
+
+.glow-purple-text {
+  text-shadow: 0 0 8px rgba(109, 40, 217, 0.4);
+}
+
+.glow-yellow {
+  box-shadow: 0 4px 20px rgba(234, 179, 8, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ddd6fe;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
